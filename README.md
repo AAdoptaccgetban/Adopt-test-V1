@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 
 local Window = OrionLib:MakeWindow({
-    Name = "Adopt V1",
+    Name = "Adopt Gear IV",
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "OrionTest"
@@ -42,6 +42,23 @@ Tab:AddToggle({
         end
     end
 })
+
+AddToggle({
+	    Name = "Hoop V2",
+	    Default = false,
+	    Callback = function(Value)
+		    getgenv().AutoHoop = Value
+		    spawn(function()
+                while getgenv().AutoHoop == true do
+                    for i, v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
+                        firetouchinterest(v, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, 0)
+                        wait()
+                        firetouchinterest(v, game:GetService("Players").LocalPlayer.Character.HumanoidRootPart, 1)
+                    end
+                end
+            end)    
+	    end
+    })
 
 Tab:AddButton({
     Name = "City Red Orb",
