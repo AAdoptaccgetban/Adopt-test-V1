@@ -154,6 +154,8 @@ wait()
 local args = {
     [1] = "joinRace"
 }
+
+game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer(unpack(args))
   	end
 end    
 })
