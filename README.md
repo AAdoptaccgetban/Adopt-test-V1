@@ -145,3 +145,15 @@ wait()
   	end
 end    
 })
+
+Tab:AddButton({
+	Name = "join race",
+	Callback = function()
+while true do
+wait()
+local args = {
+    [1] = "joinRace"
+}
+  	end
+end    
+})
