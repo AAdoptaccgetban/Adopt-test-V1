@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 
 local Window = OrionLib:MakeWindow({
-    Name = "Adopt V1",
+    Name = "Adopt Gear IIV",
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "OrionTest"
