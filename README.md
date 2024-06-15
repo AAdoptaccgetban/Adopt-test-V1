@@ -133,24 +133,13 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-w
-Tab:AddButton({
-	Name = "Auto Join Desert",
-	Callback = function()
-      		while true do()
-local args = {
-    [1] = "joinRace"
-}
-end
-  	end    
-})
+
 
 Tab:AddButton({
 	Name = "Auto Finish Race",
 	Callback = function()
-      		while true do()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(48.3109131, 36.3147125, -8680.45312, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 wait()
-end
   	end    
 })
+
