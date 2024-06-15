@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 
 local Window = OrionLib:MakeWindow({
-    Name = "Adopt Gear IIV",
+    Name = "Adopt V1",
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "OrionTest"
@@ -137,9 +137,12 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Auto Finish Grassland",
 	Callback = function()
+while true do
+wait()
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1686.07495, 36.3147125, -5946.63428, -0.984812617, 0, 0.173621148, 0, 1, 0, -0.173621148, 0, -0.984812617)
 wait()
-  	end    
+  	end 
+end   
 })
 
 Tab:AddButton({
@@ -156,9 +159,12 @@ end
 Tab:AddButton({
 	Name = "Auto Finish Magma",
 	Callback = function()
+while true do
+wait()
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1001.33118, 36.3147125, -10986.2178, -0.996191859, 0, -0.0871884301, 0, 1, 0, 0.0871884301, 0, -0.996191859)
 wait()
-  	end    
+  	end   
+end 
 })
 
 
